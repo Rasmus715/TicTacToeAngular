@@ -1,0 +1,13 @@
+<h1>{{playerStatus}}</h1>
+<button mat-raised-button class="newGameButton" (click)="newGame()">
+    {{startGameLabel}}
+</button>
+<main class="board">
+    <app-square
+    *ngFor="let val of squares; let i = index"
+    [value]="val.value"
+    (click)="makeMove(i)"
+    class="square">
+    </app-square>
+</main>
+

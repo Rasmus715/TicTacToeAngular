@@ -1,0 +1,17 @@
+.board {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+}
+
+.square {
+    border: 15px, gray solid;
+    height: 200px;
+}
+
+.mat-button-ripple {
+    display: none;
+  } 
+
+.newGameButton {
+    margin-bottom: 5px;
+}
